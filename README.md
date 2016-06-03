@@ -1,6 +1,6 @@
 # Neural Net
 
-### Written by Christopher Hittner
+##### Written by Christopher Hittner
 
 This implementation of a Neural Network was created to play with the idea of a Neural Network.
 It comes with Neuron and NeuralNet classes, which are used to construct Neural Networks.
@@ -145,3 +145,19 @@ In order to create a training data set, one must follow the following rules:
 - Each unit of training data must consist of a list of inputs and a list of outputs
 - The number of inputs and outputs in each unit must be consistent throughout all of the data.
 
+# Testing
+
+While I was testing NeuralNet, I was also messing with PyX, and took a shot at generating
+graphs of the outputs of the NeuralNets. In doing so, I was able to generate output graphs
+for an XOR network.
+
+When I saw the graphs, I found it interesting that there were places where the output value
+would suddenly change when a certain line was crossed. My theory is that it was caused by the
+Neuron thresholds. However, what I knew for certain was that at the points in the training data,
+the results in the graph appeared to be roughly correct. In the three dimensional perspective,
+the function values become more interesting because it gives a good idea of how the thresholds
+affect the output, as well as how much that output will change if the inputs are changed slightly.
+
+![XOR-1](http://i.imgur.com/MJQlTVn.png?2)
+![XOR-6](http://i.imgur.com/g7cpV5K.png?2)
+![XOR-2](http://i.imgur.com/LvORdEI.png?2)
